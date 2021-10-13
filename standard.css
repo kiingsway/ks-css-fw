@@ -9,6 +9,137 @@
 
 :root {
     --main-color: #5e24dc;
+    --alternate-color: #7e7c84;
+    --confirm-color: #1ebb4f;
+    --attention-color: #dcba24;
+    --cancel-color: #dc5e24;
+    --light-color: #ebebeb;
+    --dark-color: #323232;
+    --main-light-color: #dacdf7;
+    --alternate-light-color: #e2e1e3;
+    --confirm-light-color: #cdf7da;
+    --attention-light-color: #f7efcd;
+    --cancel-light-color: #f7dacd;
 }
 
-.btn {}
+.btn {
+    border-radius: 3px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 9px 15px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    cursor: pointer;
+    margin: 2px;
+}
+
+.btn-main {
+    background-color: var(--main-color);
+}
+
+.btn-alternate {
+    background-color: var(--alternate-color);
+}
+
+.btn-confirm {
+    background-color: var(--confirm-color);
+}
+
+.btn-attention {
+    background-color: var(--attention-color);
+}
+
+.btn-cancel {
+    background-color: var(--cancel-color);
+}
+
+.btn-white {
+    background-color: white;
+    color: var(--dark-color);
+}
+
+.btn-light {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.btn-black {
+    background-color: black;
+}
+
+.btn-link {
+    background-color: transparent;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.btn-main-light {
+    background-color: var(--main-light-color);
+    color: var(--main-color);
+}
+
+.btn-alternate-light {
+    background-color: var(--alternate-light-color);
+    color: var(--alternate-color);
+}
+
+.btn-confirm-light {
+    background-color: var(--confirm-light-color);
+    color: var(--confirm-color);
+}
+
+.btn-attention-light {
+    background-color: var(--attention-light-color);
+    color: var(--attention-color);
+}
+
+.btn-cancel-light {
+    background-color: var(--cancel-light-color);
+    color: var(--cancel-color);
+}
+
+.btn-main-outline {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.btn-alternate-outline {
+    background-color: white;
+    color: var(--alternate-color);
+    border: 1px solid var(--alternate-color);
+}
+
+.btn-confirm-outline {
+    background-color: white;
+    color: var(--confirm-color);
+    border: 1px solid var(--confirm-color);
+}
+
+.btn-attention-outline {
+    background-color: white;
+    color: var(--attention-color);
+    border: 1px solid var(--attention-color);
+}
+
+.btn-cancel-outline {
+    background-color: white;
+    color: var(--cancel-color);
+    border: 1px solid var(--cancel-color);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-s {
+    font-size: .65rem;
+}
+
+.btn-l {
+    font-size: 1.25rem;
+}
+
+.btn-xl {
+    font-size: 1.5rem;
+}

@@ -8,6 +8,9 @@
  - [ ] Typography
  - [ ] Forms
  - [ ] Cards
+    - [ ] Code
+    - [ ] Modal
+    - [ ] Image
  - [ ] Tables
  - [ ] Navbards
  - And others...
@@ -15,4 +18,4 @@
 References:
 - Colors: https://imageglass.org
 - Style: https://bootswatch.com/default
-- Style: https://github.com/twbs/bootstrap
+- Style: https://bulma.io
