@@ -345,6 +345,19 @@ div.main {
     background-color: var(--light-color);
 }
 
+.navbar>a {
+    color: black !important;
+}
+
+.navbar>a:visited {
+    color: black !important;
+}
+
+a:-webkit-any-link {
+    color: black !important;
+    text-decoration: none;
+}
+
 .navbar-s {
     height: 10%;
 }
@@ -355,4 +368,8 @@ div.main {
 
 .navbar-xl {
     height: 50%;
+}
+
+hr {
+    margin: 1rem 0;
 }
