@@ -9,22 +9,55 @@
 
 :root {
     --main-color: #5e24dc;
-    --alternate-color: #7e7c84;
-    --confirm-color: #1ebb4f;
-    --attention-color: #dcba24;
-    --cancel-color: #dc5e24;
-    --light-color: #ebebeb;
-    --dark-color: #323232;
+    --main-lighter-color: #e7defa;
     --main-light-color: #dacdf7;
+    --main-dark-color: #2b1066;
+    --alternate-color: #7e7c84;
+    --alternate-lighter-color: #ecebec;
     --alternate-light-color: #e2e1e3;
+    --confirm-color: #1ebb4f;
+    --confirm-lighter-color: #defae7;
     --confirm-light-color: #cdf7da;
+    --attention-color: #dcba24;
+    --attention-lighter-color: #faf5de;
     --attention-light-color: #f7efcd;
+    --cancel-color: #dc5e24;
+    --cancel-lighter-color: #fae7de;
     --cancel-light-color: #f7dacd;
+    --light-color: #ebebeb;
+    --neutral-color: #a8a8a8;
+    --dark-color: #323232;
     --hover-brightness: 85%;
 }
 
 body {
     font-family: "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1,
+h2 {
+    color: var(--main-dark-color);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+}
+
+kbd {
+    border-radius: 3px;
+    background-color: var(--main-dark-color);
+    color: white;
+    padding: 2px 5px;
+}
+
+.code {
+    background-color: var(--main-dark-color);
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 10px;
 }
 
 .btn {
@@ -37,7 +70,7 @@ body {
     cursor: pointer;
     margin: 2px;
     font-weight: 500;
-    transition: filter .25s;
+    transition: box-shadow .2s, filter .2s;
     -webkit-box-shadow: 0 2px 4px 0 rgb(50, 50, 50, 13%);
     -moz-box-shadow: 0 2px 4px 0 rgb(50, 50, 50, 13%);
     box-shadow: 0 2px 4px 0 rgb(50, 50, 50, 13%);
@@ -47,29 +80,80 @@ body {
     filter: brightness(85%);
 }
 
+.btn:active {
+    filter: brightness(40%);
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem var(--neutral-color);
+}
+
+div.main {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .btn-main {
     background-color: var(--main-color);
+}
+
+.btn-main:focus,
+.btn-main-outline:focus,
+.btn-link:focus {
+    box-shadow: 0 0 0 0.25rem var(--main-light-color);
 }
 
 .btn-alternate {
     background-color: var(--alternate-color);
 }
 
+.btn-alternate:focus,
+.btn-alternate-outline:focus {
+    box-shadow: 0 0 0 0.25rem var(--alternate-light-color);
+}
+
 .btn-confirm {
     background-color: var(--confirm-color);
+}
+
+.btn-confirm:focus,
+.btn-confirm-outline:focus {
+    box-shadow: 0 0 0 0.25rem var(--confirm-light-color);
 }
 
 .btn-attention {
     background-color: var(--attention-color);
 }
 
+.btn-attention:focus,
+.btn-attention-outline:focus {
+    box-shadow: 0 0 0 0.25rem var(--attention-light-color);
+}
+
 .btn-cancel {
     background-color: var(--cancel-color);
+}
+
+.btn-cancel:focus,
+.btn-cancel-outline:focus {
+    box-shadow: 0 0 0 0.25rem var(--cancel-light-color);
 }
 
 .btn-white {
     background-color: white;
     color: var(--dark-color);
+}
+
+.btn-white:focus {
+    box-shadow: 0 0 0 0.25rem var(--light-color);
+}
+
+.btn-light:focus,
+.btn-dark:focus,
+.btn-black:focus {
+    box-shadow: 0 0 0 0.25rem var(--neutral-color);
 }
 
 .btn-light {
@@ -82,10 +166,14 @@ body {
 }
 
 .btn-link {
-    background-color: transparent;
+    background-color: rgb(255, 255, 255, 0.2);
     color: var(--main-color);
     text-decoration: underline;
     box-shadow: 0px 0px 0px 0px #fff;
+}
+
+.btn-main-light:focus {
+    box-shadow: 0 0 0 0.25rem var(--main-lighter-color);
 }
 
 .btn-main-light {
@@ -93,9 +181,17 @@ body {
     color: var(--main-color);
 }
 
+.btn-alternate-light:focus {
+    box-shadow: 0 0 0 0.25rem var(--alternate-lighter-color);
+}
+
 .btn-alternate-light {
     background-color: var(--alternate-light-color);
     color: var(--alternate-color);
+}
+
+.btn-confirm-light:focus {
+    box-shadow: 0 0 0 0.25rem var(--confirm-lighter-color);
 }
 
 .btn-confirm-light {
@@ -103,9 +199,17 @@ body {
     color: var(--confirm-color);
 }
 
+.btn-attention-light:focus {
+    box-shadow: 0 0 0 0.25rem var(--attention-lighter-color);
+}
+
 .btn-attention-light {
     background-color: var(--attention-light-color);
     color: var(--attention-color);
+}
+
+.btn-cancel-light:focus {
+    box-shadow: 0 0 0 0.25rem var(--cancel-lighter-color);
 }
 
 .btn-cancel-light {
