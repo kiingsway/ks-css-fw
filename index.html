@@ -12,39 +12,42 @@
 </head>
 
 <body>
-    <div class="main">
 
+    <nav class="navbar navbar-xl">
         <h1>KS Framework</h1>
-        <h2>Buttons</h2>
-        <h3>Default</h3>
-        <div>
-            <div>
+        <h2><a href="#Buttons">Buttons</a></h2>
+        <h3><a href="#Default">Default</a></h3>
+        <h3><a href="#LightOutlined">Light & Outlined</a></h3>
+        <h3><a href="#Sizes">Sizes</a></h3>
+        <h3><a href="#FontAwesome">Font Awesome</a></h3>
+        <h2><a href="#Typography">Typography</a></h2>
+        <h3><a href="#UserInput">User input</a></h3>
+        <h3><a href="#SampleCode">Sample code</a></h3>
+    </nav>
+
+    <div class="main">
+        <h2 id="Buttons">Buttons</h2>
+        <h3 id="Default">Default</h3>
+        <div class="row">
+            <div class="col-6">
                 <button class="btn btn-main">Main</button>
                 <button class="btn btn-alternate">Alternate</button>
                 <button class="btn btn-confirm">Confirm</button>
                 <button class="btn btn-attention">Attention</button>
                 <button class="btn btn-cancel">Cancel</button>
-            </div>
-            <div class="code">
-                <pre><code>&lt;button class="btn btn-main"&gt;Main&lt;/button&gt;
-&lt;button class="btn btn-alternate"&gt;Alternate&lt;/button&gt;
-&lt;button class="btn btn-confirm"&gt;Confirm&lt;/button&gt;
-&lt;button class="btn btn-attention"&gt;Attention&lt;/button&gt;
-&lt;button class="btn btn-cancel"&gt;Cancel&lt;/button&gt;</code></pre>
-            </div>
-        </div>
-
-        <h3>Black & White</h3>
-        <div>
-            <div>
                 <button class="btn btn-white">White</button>
                 <button class="btn btn-light">Light</button>
                 <button class="btn btn-dark">Dark</button>
                 <button class="btn btn-black">Black</button>
                 <button class="btn btn-link">Link</button>
             </div>
-            <div class="code">
-                <pre><code>&lt;button class="btn btn-white"&gt;White&lt;/button&gt;
+            <div class="col-6 code">
+                <pre><code>&lt;button class="btn btn-main"&gt;Main&lt;/button&gt;
+&lt;button class="btn btn-alternate"&gt;Alternate&lt;/button&gt;
+&lt;button class="btn btn-confirm"&gt;Confirm&lt;/button&gt;
+&lt;button class="btn btn-attention"&gt;Attention&lt;/button&gt;
+&lt;button class="btn btn-cancel"&gt;Cancel&lt;/button&gt;
+&lt;button class="btn btn-white"&gt;White&lt;/button&gt;
 &lt;button class="btn btn-light"&gt;Light&lt;/button&gt;
 &lt;button class="btn btn-dark"&gt;Dark&lt;/button&gt;
 &lt;button class="btn btn-black"&gt;Black&lt;/button&gt;
@@ -52,36 +55,30 @@
             </div>
         </div>
 
-        <h3>Light version</h3>
-        <div>
-            <div>
+        <h3 id="LightOutlined">Light & Outlined</h3>
+        <div class="row">
+            <div class="col-6">
                 <button class="btn btn-main-light">Main</button>
                 <button class="btn btn-alternate-light">Alternate</button>
                 <button class="btn btn-confirm-light">Confirm</button>
                 <button class="btn btn-attention-light">Attention</button>
                 <button class="btn btn-cancel-light">Cancel</button>
-            </div>
-            <div class="code">
-                <pre><code>&lt;button class="btn btn-main-light"&gt;Main&lt;/button&gt;
-&lt;button class="btn btn-alternate-light"&gt;Alternate&lt;/button&gt;
-&lt;button class="btn btn-confirm-light"&gt;Confirm&lt;/button&gt;
-&lt;button class="btn btn-attention-light"&gt;Attention&lt;/button&gt;
-&lt;button class="btn btn-cancel-light"&gt;Cancel&lt;/button&gt;</code></pre>
-
-            </div>
-        </div>
-
-        <h3>Outlined</h3>
-        <div>
-            <div>
                 <button class="btn btn-main-outline">Main</button>
                 <button class="btn btn-alternate-outline">Alternate</button>
                 <button class="btn btn-confirm-outline">Confirm</button>
                 <button class="btn btn-attention-outline">Attention</button>
                 <button class="btn btn-cancel-outline">Cancel</button>
             </div>
-            <div class="code">
-                <pre><code>&lt;button class="btn btn-main-outline">Main&lt;/button>
+            <div class="col-6 code">
+                <pre><code>&lt;!-- Light version -->
+&lt;button class="btn btn-main-light"&gt;Main&lt;/button&gt;
+&lt;button class="btn btn-alternate-light"&gt;Alternate&lt;/button&gt;
+&lt;button class="btn btn-confirm-light"&gt;Confirm&lt;/button&gt;
+&lt;button class="btn btn-attention-light"&gt;Attention&lt;/button&gt;
+&lt;button class="btn btn-cancel-light"&gt;Cancel&lt;/button&gt;
+
+&lt;!-- Outlined version -->
+&lt;button class="btn btn-main-outline">Main&lt;/button>
 &lt;button class="btn btn-alternate-outline">Alternate&lt;/button>
 &lt;button class="btn btn-confirm-outline">Confirm&lt;/button>
 &lt;button class="btn btn-attention-outline">Attention&lt;/button>
@@ -89,52 +86,45 @@
             </div>
         </div>
 
-        <h3>Sizes</h3>
-        <div>
-            <div>
+        <h3 id="Sizes">Sizes</h3>
+        <div class="row">
+            <div class="col-6">
                 <button class="btn btn-s">Small</button>
                 <button class="btn btn-dark">Default</button>
                 <button class="btn btn-l">Large</button>
                 <button class="btn btn-xl">Extralarge</button>
+                <button class="btn btn-block btn-s">Block Small</button>
+                <button class="btn btn-block">Block Default</button>
+                <button class="btn btn-block btn-l">Block Large</button>
+                <button class="btn btn-block btn-xl">Block Extralarge</button>
 
             </div>
-            <div class="code">
+            <div class="col-6 code">
                 <pre><code>&lt;button class="btn btn-s">Small&lt;/button>
 &lt;button class="btn btn-dark">Default&lt;/button>
 &lt;button class="btn btn-l">Large&lt;/button>
-&lt;button class="btn btn-xl">Extralarge&lt;/button></code></pre>
+&lt;button class="btn btn-xl">Extralarge&lt;/button>
+
+&lt;!-- Block -->
+&lt;button class="btn btn-block btn-s">Block Small&lt;/button>
+&lt;button class="btn btn-block">Block Default&lt;/button>
+&lt;button class="btn btn-block btn-l">Block Large&lt;/button>
+&lt;button class="btn btn-block btn-xl">Block Extralarge&lt;/button></code></pre>
             </div>
         </div>
 
-        <h3>Block</h3>
-        <div>
-            <div>
-                <button class="btn btn-block btn-s">Small</button>
-                <button class="btn btn-block">Default</button>
-                <button class="btn btn-block btn-l">Large</button>
-                <button class="btn btn-block btn-xl">Extralarge</button>
-            </div>
-            <div class="code">
-                <pre><code>&lt;button class="btn btn-block btn-s">Small&lt;/button>
-&lt;button class="btn btn-block">Default&lt;/button>
-&lt;button class="btn btn-block btn-l">Large&lt;/button>
-&lt;button class="btn btn-block btn-xl">Extralarge&lt;/button></code></pre>
-            </div>
-        </div>
-
-
-        <h3>Font Awesome icons</h3>
-        <div>
-            <div>
-                <button class="btn btn-s"><i class="fas fa-bold"></i></button>
-                <button class="btn btn-s"><i class="fas fa-italic"></i></button>
-                <button class="btn btn-s"><i class="fas fa-underline"></i></button>
-                <button class="btn btn-s"><i class="fas fa-strikethrough"></i></button>
+        <h3 id="FontAwesome">Font Awesome icons</h3>
+        <div class="row">
+            <div class="col-6">
+                <button class="btn btn-s btn-light"><i class="fas fa-bold"></i></button>
+                <button class="btn btn-s btn-light"><i class="fas fa-italic"></i></button>
+                <button class="btn btn-s btn-light"><i class="fas fa-underline"></i></button>
+                <button class="btn btn-s btn-light"><i class="fas fa-strikethrough"></i></button>
                 <button class="btn"><i class="fab fa-github"></i> kiingsway</button>
                 <button class="btn btn-xl btn-cancel-outline">Cancel <i class="fas fa-times"></i></button>
                 <button class="btn btn-xl btn-confirm">Save <i class="fas fa-check"></i></button>
             </div>
-            <div class="code">
+            <div class="col-6 code">
                 <pre><code>&lt;button class="btn btn-s">&lt;i class="fas fa-bold">&lt;/i>&lt;/button>
 &lt;button class="btn btn-s">&lt;i class="fas fa-italic">&lt;/i>&lt;/button>
 &lt;button class="btn btn-s">&lt;i class="fas fa-underline">&lt;/i>&lt;/button>
@@ -145,28 +135,27 @@
             </div>
         </div>
 
-        <h2>Typography</h2>
-        <h3>User input</h3>
-        <div>
-            <div>
+        <h2 id="Typography">Typography</h2>
+        <h3 id="UserInput">User input</h3>
+        <div class="row">
+            <div class="col-6">
                 Para ativar e usar o histórico de área de trasnferência, pressione <kbd>Win + V</kbd>.
             </div>
-            <div class="code">
+            <div class="col-6 code">
                 <pre><code>Para ativar e usar o histórico de área de trasnferência, pressione &lt;kbd>Win + V&lt;/kbd>.</code></pre>
             </div>
         </div>
 
-        <h3>Code</h3>
-        <div>
-            <div>
-
+        <h3 id="SampleCode">Sample code</h3>
+        <div class="row">
+            <div class="col-6">
+                <div class="code"><pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;&lt;p&gt;And another line of sample text here...&lt;/p&gt;</code></pre></div>
             </div>
-            <div class="code">
-                <pre><code>&lt;pre>&lt;code>&lt;p&gt;Sample text here...&lt;/p&gt;&lt;p&gt;And another line of sample text here...&lt;/p&gt;&lt;/code>&lt;/pre></code>
+            <div class="col-6 code">
+                <pre><code>&lt;div class="code">&lt;pre>&lt;code>&lt;p&gt;Sample text here...&lt;/p&gt;&lt;p&gt;And another line of sample text here...&lt;/p&gt;&lt;/code>&lt;/pre></code></div>
                 </pre>
             </div>
         </div>
-        <pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;&lt;p&gt;And another line of sample text here...&lt;/p&gt;</code></pre>
     </div>
 
 </body>
