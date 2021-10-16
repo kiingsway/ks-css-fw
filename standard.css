@@ -41,7 +41,8 @@ h2 {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-weight: 500;
 }
 
@@ -52,12 +53,20 @@ kbd {
     padding: 2px 5px;
 }
 
-.code {
+.code>pre {
     background-color: var(--main-dark-color);
     color: white;
     padding: 15px;
     border-radius: 6px;
     overflow: auto;
+}
+
+.code>.lang {
+    background-color: var(--main-dark-color);
+    color: white;
+    border-radius: 6px 6px 0 0;
+    padding: 6px;
+    font-weight: 500;
 }
 
 .row {
@@ -150,6 +159,12 @@ kbd {
 
 .btn:hover {
     filter: brightness(85%);
+}
+
+.btn:disabled {
+    filter: brightness(55%);
+    cursor: default;
+    box-shadow: 0;
 }
 
 .btn:active {
