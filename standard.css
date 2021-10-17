@@ -30,7 +30,8 @@
     --hover-brightness: 85%;
 }
 
-body {
+body,
+textarea {
     font-family: "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -51,6 +52,39 @@ kbd {
     background-color: var(--main-dark-color);
     color: white;
     padding: 2px 5px;
+}
+
+.form {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 3px;
+    transition: box-shadow .2s, filter .2s ease-in-out;
+}
+
+.form:hover {
+    filter: brightness(90%);
+}
+
+.form:active {
+    filter: brightness(40%);
+    -webkit-box-shadow: 0 2px 4px 0 rgb(50, 50, 50, 13%);
+    -moz-box-shadow: 0 2px 4px 0 rgb(50, 50, 50, 13%);
+    box-shadow: 0 2px 4px 0 rgb(50, 50, 50, 13%);
+}
+
+.form:focus {
+    box-shadow: 0 0 0 .2rem var(--neutral-color);
 }
 
 .code>pre {
